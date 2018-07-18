@@ -1,0 +1,1 @@
+logevent.exe -m "wmi_logevent_bad_login_count" -d "Bad login event"
