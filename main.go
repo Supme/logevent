@@ -1,5 +1,5 @@
 // Example use:
-//   logevent.exe -m "wmi_logevent_bad_login_count" -d "Bad login event"
+//   logevent.exe -m "windows_logevent_bad_login_count" -d "Bad login event"
 // Create sheduler task for log with required code
 package main
 
@@ -22,8 +22,8 @@ var (
 )
 
 func init() {
-	flag.StringVar(&filename, "f", "C:\\Program Files\\wmi_exporter\\textfile_inputs\\logevent.prom", "Metric file")
-	flag.StringVar(&metric, "m", "wmi_logevent_count", "Metric name")
+	flag.StringVar(&filename, "f", "C:\\Program Files\\windows_exporter\\textfile_inputs\\logevent.prom", "Metric file")
+	flag.StringVar(&metric, "m", "windows_logevent_count", "Metric name")
 	flag.StringVar(&description, "d", "Log event count", "Metric description")
 	flag.Parse()
 }
